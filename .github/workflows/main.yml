@@ -36,6 +36,6 @@ jobs:
         with:
           headless: true
           # Provide a specific specs to run
-          spec: google.spec.ts
+          # spec: google.spec.ts
           # Whether or not to silence any Cypress specific output from stdout
           quiet: false
