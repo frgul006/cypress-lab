@@ -1,5 +1,10 @@
 {
-    "files.exclude": {
-        "node_modules": true
-    }
+  "files.exclude": {
+    "node_modules": true
+  },
+  // Default (format when you paste)
+  "editor.formatOnPaste": true,
+  // Default (format when you save)
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
