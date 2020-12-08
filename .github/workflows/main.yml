@@ -17,15 +17,25 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Use Node.js 12
+      - name: use node.js 12
         uses: actions/setup-node@v1
         with:
           version: 12
 
-      # Install
+      # install
       - name: npm install
         run: npm install
 
       # Lint
-      - name: npm run lint
+      - name: lint
         run: npm run lint
+
+      # E2E
+      - name: e2e
+        uses: cypress-io/github-action@v2.6.1
+        with:
+          headless: true
+          # Provide a specific specs to run
+          spec: google.spec.ts
+          # Whether or not to silence any Cypress specific output from stdout
+          quiet: false
