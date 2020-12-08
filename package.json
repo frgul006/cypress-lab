@@ -1,0 +1,23 @@
+{
+  "name": "cypress-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "$(npm bin)/cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frgul006/cypress-lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frgul006/cypress-lab/issues"
+  },
+  "homepage": "https://github.com/frgul006/cypress-lab#readme",
+  "devDependencies": {
+    "cypress": "^6.1.0",
+    "typescript": "^4.1.2"
+  }
+}
