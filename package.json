@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --ext .ts",
-    "test": "$(npm bin)/cypress open",
+    "test": "npm run cypress:run",
+    "cypress": "$(npm bin)/cypress",
+    "cypress:run": "$(npm bin)/cypress run",
+    "cypress:open": "$(npm bin)/cypress open",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
   "repository": {
